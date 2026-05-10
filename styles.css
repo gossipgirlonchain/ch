@@ -1,10 +1,10 @@
 :root {
-  --ink: #1a1a1a;
-  --ink-soft: #4a4a4a;
-  --muted: #6b6b6b;
-  --rule: #e3e3e0;
-  --paper: #fafaf7;
-  --accent: #0a4d8c;
+  --ink: #000;
+  --ink-soft: #000;
+  --muted: #000;
+  --rule: #000;
+  --paper: #fff;
+  --accent: #000;
   --max-width: 880px;
   --label-width: 160px;
   --gap: 32px;
@@ -29,7 +29,7 @@ html, body {
 a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(10, 77, 140, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   transition: border-color 120ms ease, color 120ms ease;
 }
 
@@ -327,22 +327,3 @@ a:hover {
   }
 }
 
-/* ---------- prefers-color-scheme: dark ---------- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #ededea;
-    --ink-soft: #c4c4be;
-    --muted: #8a8a85;
-    --rule: #2c2c2a;
-    --paper: #15151a;
-    --accent: #7ab2e8;
-  }
-
-  a {
-    border-bottom-color: rgba(122, 178, 232, 0.3);
-  }
-
-  .content.links a {
-    border-bottom-color: rgba(255, 255, 255, 0.2);
-  }
-}
